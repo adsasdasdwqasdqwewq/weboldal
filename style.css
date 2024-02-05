@@ -37,12 +37,20 @@ header {
     }
   }
 
+:root {
+  --c: red;
+}
+body:has(#szin:checked){
+  --c: khaki;
+}
+
+h1{
+  color: var(--c)
+}
 
 
 
-
-
-  .control-me::after {
+/*.control-me::after {
     content: "Főoldal";
     font-size: 100px;
 }
@@ -61,7 +69,6 @@ label {
     position: absolute;
     left: -100vw;
 }
-    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
 
 /*body {
     height: 100vh;
