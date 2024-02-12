@@ -1,15 +1,16 @@
 body{
     background-image: url(img/background.png);
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    padding: 0 0 150px 0;
 }
 
 header {
     background-color: #333;
     color: #a73c3c;
     text-align: center;
-    padding: 3em;
+    bottom: 0;
+    top: auto;
+    height: auto;
   }
 
   nav {
@@ -17,11 +18,17 @@ header {
     justify-content: center;
     background-color: #242424;
     padding: 25px;
+    display: flex;
+    width: 100%;
   }
   
   nav a {
     color: #a73c3c;
     text-decoration: none;
+    text-align: center;
+    margin-right: 0;
+    font-size: 33px;
+    color: beige;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
@@ -38,7 +45,7 @@ header {
   }
 
 :root {
-  --c: red;
+  --c: rgb(255, 255, 255);
 }
 body:has(#szin:checked){
   --c: khaki;
